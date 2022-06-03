@@ -3,14 +3,13 @@ username2 = {};
 password2 = {};
 username2.value = "beans";
 password2.value = "toast";
-Lunch_break = 1;
-Water_Break = 1;
-Lesuire_Time = 1;
-Mental_Break = 1;
+Lunch_break = 0;
+Water_Break = 0;
+Lesuire_Time = 0;
+Mental_Break = 0;
 // this code is to create varialbes to assian vaules later
 // this funcation allowes the light comand to be ready and then to check the statsus and wait for a response.
 function UsernameAndPassword() {
-    if username2 == username.getElementById() && password2 = password.getElementById()
             $("#login").hide();
             $("#StudyForTitle").show();
             $("#OptinalPicks").show();
@@ -25,6 +24,7 @@ function UsernameAndPassword() {
 function contact() {
     $("#contacts").show();
 
+    $("#how_it_works").hide()
     $("#login").hide();
     $("#picture").hide();
     $("#StudyForTitle").hide();
@@ -44,6 +44,7 @@ function contact() {
 function aboutUs() {
     $("#picture").show();
 
+    $("#how_it_works").hide()
     $("#contacts").hide();
     $("#login").hide();
     $("#StudyForTitle").hide();
@@ -62,6 +63,8 @@ function aboutUs() {
 // this function will hide certan DIV's and show others with do display. this one hiding all divs open or not. then showing just the about us DIV resuting in the user veiwing the abput us page
 
 function services() {
+    $("#how_it_works").show()
+
     $("#contacts").hide();
     $("#login").hide();
     $("#picture").hide();
